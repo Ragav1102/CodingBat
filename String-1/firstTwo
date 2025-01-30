@@ -1,0 +1,13 @@
+public String firstTwo(String str) {
+  if(str.length()<=1){
+    return str;
+  }
+  if(str.length()>=2)
+  {
+    String s=str.substring(0,2);
+  return s;
+  }
+  else{
+    return " ";
+  }
+}
