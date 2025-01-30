@@ -1,0 +1,10 @@
+public String endUp(String str) {
+  if(str.length()<=3){
+    return str.toUpperCase();
+  }
+  int add=(str.length()-3);
+  
+  String front=(str.substring(0,add));
+  String front1=(str.substring(add));
+  return front +front1.toUpperCase();
+}
