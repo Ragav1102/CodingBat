@@ -1,0 +1,11 @@
+public int close10(int a, int b) {
+  int adif= Math.abs(a-10);
+    int bdif =Math.abs(b-10);
+    if(adif<bdif){
+      return a;
+    }
+   if(adif>bdif){
+      return b;
+    }
+    return 0;
+}
