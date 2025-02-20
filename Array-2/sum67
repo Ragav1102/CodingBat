@@ -1,0 +1,16 @@
+public int sum67(int[] nums) {
+      int sum = 0;
+        boolean skip = false;
+        for (int num : nums) {
+            if (num == 6) {
+                skip = true; 
+            }
+            if (!skip) {
+                sum += num;
+            }
+            if (num == 7 && skip) {
+                skip = false; 
+            }
+        }
+        return sum;
+}
