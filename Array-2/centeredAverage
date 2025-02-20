@@ -1,0 +1,16 @@
+public int centeredAverage(int[] nums) {
+   int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+            if (num < min) {
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
+        }
+        sum -= (min + max);
+        return sum / (nums.length - 2);
+    }
