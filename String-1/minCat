@@ -1,0 +1,8 @@
+public String minCat(String a, String b) {
+  int lenA = a.length();
+        int lenB = b.length();
+                int minLen = Math.min(lenA, lenB);
+                String subA = a.substring(lenA - minLen);
+        String subB = b.substring(lenB - minLen);
+        return subA + subB;
+}
