@@ -1,0 +1,9 @@
+public String withoutX2(String str) { 
+      if (str.length() >= 2) {
+            String first = str.substring(0, 2).replace("x", "");
+            return first + str.substring(2);
+        } else if (str.equals("x")) {
+            return "";
+        }
+        return str;
+}
